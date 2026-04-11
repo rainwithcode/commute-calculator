@@ -10,32 +10,32 @@
     <h1>Commute Calculator</h1>
     <div>
       <form>
-        <label for="user-preparation"
+        <label for="user-prep"
           >How long do you take to prepare? (In minutes)</label
         ><input
           type="number"
-          id="user-preparation"
-          name="user-preparation"
+          id="user-prep"
+          name="user-prep"
           placeholder="30"
         />
         <br />
-        <label for="user-time"
+        <label for="user-commute"
           >How long does your commute take? (In hours)</label
-        ><input type="number" id="user-time" name="user-time" placeholder="2" />
+        ><input type="number" id="user-commute" name="user-commute" placeholder="2" />
         <br />
-        <label for="user-arrival">What time do you want to arrive?</label
+        <label for="user-arrive">What time do you want to arrive?</label
         ><input
           type="time"
-          id="user-arrival"
-          name="user-arrival"
+          id="user-arrive"
+          name="user-arrive"
           placeholder="1:00 PM"
         />
         <br />
         <button type="submit">Calculate</button>
         <div hidden>
-          <p>You should prepare by: <span id="preparation-time"></span></p>
-          <p>You should leave by: <span id="leave-time"></span></p>
-          <p>You should arrive by: <span id="arrival-time"></span></p>
+          <p>You should prepare by: <span id="result-prep"></span></p>
+          <p>You should leave by: <span id="result-leave"></span></p>
+          <p>You should arrive by: <span id="result-arrive"></span></p>
         </div>
       </form>
     </div>
