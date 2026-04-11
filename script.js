@@ -1,3 +1,21 @@
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event)) {
+  event.preventDefault();
+
+const prepMinutes = Number(document.getElementById("user-prep").value);
+const commuteHours = Number(document.getElementById("commute-prep").value);
+const arrivalTimeStr = document.getElementById("user-arrive").value;
+const results = calculate(prepMinutes, commuteHours, arrivalTimeStr);
+
+document.getElementById("result-prep").textContent = results.startPrep;
+document.getElementById("result-leave").textContent = results.leaveBy;
+document.getElementById("result-arrive").textContent = results.arriveBy;
+
+document.getElementById("results").removeAttribute("hidden");
+}
+
+
 function parseTime(timeStr) {
   // timeStr is "HH:MM" from the time input
   const [hours, minutes] = timeStr.split(":").map(Number);
