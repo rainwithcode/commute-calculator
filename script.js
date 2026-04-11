@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function(event)) {
+form.addEventListener("submit", function(event) {
   event.preventDefault();
 
 const prepMinutes = Number(document.getElementById("user-prep").value);
@@ -13,7 +13,7 @@ document.getElementById("result-leave").textContent = results.leaveBy;
 document.getElementById("result-arrive").textContent = results.arriveBy;
 
 document.getElementById("results").removeAttribute("hidden");
-}
+});
 
 
 function parseTime(timeStr) {
