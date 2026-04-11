@@ -21,12 +21,7 @@
         <br />
         <label for="user-time"
           >How long does your commute take? (In hours)</label
-        ><input
-          type="number"
-          id="user-time"
-          name="user-time"
-          placeholder="2"
-        />
+        ><input type="number" id="user-time" name="user-time" placeholder="2" />
         <br />
         <label for="user-arrival">What time do you want to arrive?</label
         ><input
@@ -37,6 +32,11 @@
         />
         <br />
         <button type="submit">Calculate</button>
+        <div hidden>
+          <p>You should prepare by: <span id="preparation-time"></span></p>
+          <p>You should leave by: <span id="leave-time"></span></p>
+          <p>You should arrive by: <span id="arrival-time"></span></p>
+        </div>
       </form>
     </div>
   </body>
